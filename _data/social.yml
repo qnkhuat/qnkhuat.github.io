@@ -1,0 +1,30 @@
+## social links
+## -----------------------------------------------------------------------------
+## Uncomment the concerned lines and provide your username for the corresponding
+## service.
+## -----------------------------------------------------------------------------
+#
+twitter      : qnkhuat
+github       : qnkhuat
+# rss          : rss
+# dribbble     : jekyll
+facebook     : qnkhuat
+goodreads    : qnkhuat
+# flickr       : jekyll
+# instagram    : qnkhuat
+# linkedin     : jekyll
+# pinterest    : jekyll
+# telegram     : jekyll
+# googleplus   : +jekyll
+# microdotblog : jekyll
+
+# youtube              : jekyll
+# youtube_channel      : UC8CXR0-3I70i1tfPg1PAE1g
+# youtube_channel_name : CloudCannon
+
+ ## Mastodon instances
+# mastodon:
+# - username: jekyll
+#   instance: example.com
+# - username: jekyll2
+#   instance: example.com
