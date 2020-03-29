@@ -2,6 +2,7 @@
 layout: post
 title: "Climate change and Tesla"
 categories: climate
+permalink: climateandtesla
 ---
 
 > I’m finding a way to apply technology in solving climate change, this small essay is me gathering my thoughts and sharing what led me to care about this global issue.

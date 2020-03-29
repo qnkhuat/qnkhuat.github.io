@@ -34,7 +34,7 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
-permalink: /:categories/:title:output_ext
+permalink: /:title:output_ext
 
 defaults:
   - scope:
