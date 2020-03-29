@@ -4,6 +4,7 @@
   margin-right: auto;
   width: 50%;
 }
-text-center {
+.text-center {
   text-align: center;
+  width: 100%;
 }
