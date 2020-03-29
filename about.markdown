@@ -4,4 +4,4 @@ title: About
 permalink: /about/
 ---
 
-Will be added later.
+Hi there.

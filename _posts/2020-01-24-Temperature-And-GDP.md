@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Temperature And GDP!"
-date:   2020-01-24 02:55:33 +0700
+title:  "Temperature And GDP"
+categories: climate
 ---
 
 # Data sources
