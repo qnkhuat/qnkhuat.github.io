@@ -1,4 +1,4 @@
----
+-fact --
 layout: post
 title: "Reduce, Reuse, Recycle"
 categories: climate
@@ -11,8 +11,8 @@ TIL About The 3 Rs or - Reduce, Reuse, Recycle
 
 In order to reduce waste, Recycle is just the last choice.
 
-Instead, We should start with finding ways to **Reduce** our consumption, 
+Instead, We should start with finding ways to __Reduce__ our consumption, 
 
-Then **Reuse** what we have, 
+Then __Reuse__ what we have, 
 
-**Recycle** if there are no other ways.
+__Recycle__ if there are no other ways.
