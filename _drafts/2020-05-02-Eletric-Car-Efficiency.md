@@ -12,15 +12,15 @@ Terms :
 - Electric cars : Cars powered by 100% electric.
 - Hybrid cars : Cars powered by both electric and fossil fuels (__Gas__ or __Diesel__).
 - Combustion engine cars : Cars powered by fossil fuels.
-- L/100km : the unit of measurement for how many liters(l) of fuel a car consumes to travel 100km. We'll use this number a lot to compare the efficiency of cars.
+- L/100km : the unit of measurement for how many liters of fuel a car consumes to travel 100km. We'll use this number a lot to compare the efficiency of cars.
 
-__Let's start with a fact checks__
+__Let's start with some fact checks__
 <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" 
     src="https://qnkhuat.github.io/ploty-charts/ev-vs-ce/plots/top_fuel_consumption_by_sector_2019.html" 
     height="525" width="100%"></iframe>
 
 
-The chart above shows the most fuel-efficient cars in its sector as of 2019 [(1)](#1).
+The chart above shows the 3 most fuel-efficient cars each for 3 fuel types: Electric, Hybird and Gas in 2019 [(1)](#1).
 
 The Mitsubishi Mirage are the king of Combustion Engine car which consumes 6 L/100km - 3.5 times higher than the Tesla Model 3 which consumes 1.7 L/100km.
 
@@ -31,11 +31,9 @@ __How about the whole industry?__[(2)](#2).
     src="https://qnkhuat.github.io/ploty-charts/ev-vs-ce/plots/gas_hybrid_electric_1985-2020.html" 
     height="525" width="100%"></iframe>
 
-This is even worse for Combustion engine cars and Hybrid cars. 
-As of 2020, the electric cars industry are about __5__ times (2.3 L/100km vs 10.8 L/100km) more efficient than the combustion engine cars industry.
+As of 2020, The Combusion Engine Cars Industry consumes 10.88 L/100km on average - __5__ times higher than the Electric Cars Industry which consumes 2.29 L/100km.
 
-It's more than 100 years of development for combustion engine cars since the successful Ford Model T in 1908.
-
+Let's not forget the Combustion Engine Cars Industry has more than 100 years of production experienced since the successful Ford Model T in 1908, And the first highway legal Electric Cars was the Tesla Roadster developed in 2004.
 # How do Electric cars achieve this efficiency?
 In order to answer this question we need to understand how a car consume energy?
 - Energy conversion
@@ -50,11 +48,11 @@ We care about this because we need to know how much energy has been wasted to co
 
 For comparision we need to measure the conversion rate
 
-$$\eta_{e} = {E_{in} \over E_{out}}$$
+$$\eta_{e} = {E_{out} \over E_{in}}$$
 
-In which $$E_{in}$$ are the actual energy that push our car to move. Or in physics, we call it kinetic energy.
+In which $$E_{out}$$ are the actual energy that push our car to move. Or in physics, we call it kinetic energy.
 
-$$E_{out}$$ are the energy that we input to the car. For combustion engine cars It's gasoline/Dielse. For electric cars it's, well, Electric. 
+$$E_{in}$$ are the energy that we input to the car. For combustion engine cars It's gasoline/Dielse. For electric cars it's, well, Electric. 
 j
 <div style="overflow:auto">
 <figure style="width:30%; float:left; margin-right:10px">
@@ -98,14 +96,14 @@ In our combustion engine cars, we take the energy in form of gasoline or diesel,
 # Is the electric cars the final answer?
 
 
-### Footnotes
+# Footnotes
 ##### (1)
 The numbers were estimated by [United States Environmental Protection](https://www.epa.gov) for 55% city and 45% highway driving.
 
 The number of L/100km estimated for electric cars are the equivalent liters of gas to generate electric to power the car to travel 100km.
 
 ##### (2)
-All the data used in this post are available here : [link](https://www.fueleconomy.gov/feg/download.shtml).
+All the data used in this post are available [here](https://www.fueleconomy.gov/feg/download.shtml).
 
 
 ##### (3)
