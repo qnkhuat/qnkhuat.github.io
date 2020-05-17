@@ -8,3 +8,7 @@
   text-align: center;
   width: 100%;
 }
+
+.image-latex div {
+    display:contents !important;
+}
