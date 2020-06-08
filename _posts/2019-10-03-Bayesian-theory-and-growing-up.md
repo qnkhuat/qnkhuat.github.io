@@ -5,7 +5,7 @@ categories: self
 permalink: growingup
 ---
 
-Bayesian is a thing in statical that helps statisticians predict the probability of an event. The intuition behind it is simple: When we have data of an event we can compute the probability of in which the event happen. As we collect more data, we can update our predictions Gradually, our predicion becomes less wrong. This makes Bayesian an intuitive and powerful tool.
+Bayesian is a thing in statical that helps statisticians predict the probability of an event. The intuition behind it is simple: When we have data of an event we can compute the probability in which the event happens. As we collect more data, we can update our predictions Gradually, our prediction becomes less wrong. This makes Bayesian an intuitive and powerful tool.
 
 Growing up quite is similar to that, When we observe the world, we initialize our beliefs about it, and the more we observe, the stronger our beliefs become.
 
