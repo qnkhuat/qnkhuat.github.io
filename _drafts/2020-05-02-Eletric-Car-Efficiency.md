@@ -24,7 +24,7 @@ With the hybrid Toyora Prius using both electric and gasoline consumes 4.2 L/100
 
 ## A broader aspect[(2)](#2)
 
-One sample is hardly be able to speak for its industry, so this is the fuel economy of each car industry from 1985 to 2020.
+One sample is hardly be able to speak for its industry, so this chart shows the fuel economy of each car industry from 1985 to 2020.
 <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" 
     src="https://qnkhuat.github.io/plotly-charts/ev-vs-ce/plots/gas_hybrid_electric_1985-2020.html" 
     height="525" width="100%"></iframe>
@@ -35,34 +35,36 @@ It's important to note that the Combustion Engine Cars Industry has started with
 It's almost one century ahead of development for Combustion Engine Cars.
 
 # How do Electric cars achieve this efficiency?
-Touching to the heart of this question is the problem of energy, and to tackle this problem its essiential to recall The law of conservation of energy:
+
+##### TODO : add an explnation about kinetic energy
+
+When we say Tesla Model 3 are more energy efficient than The Mitsubishi Mirage, it's just that The Tesla Model waste less of its input energy than the Mitsubishi Mirage.
+
+Touching to the heart of this question is the problem of energy, and to tackle this problem it's necessary to recall The law of conservation of energy:
 > Energy can neither be created nor destroyed; rather, it can only be transformed or transferred from one form to another.
 
-But there are good and bad energy based on the circumstances. For example when we drive a combustion engine cars, most of its input energy are transformed to heat in the engine or thermal energy. There are no use of having thermal energy while driving a car, especially in a hot day.
+Because there are good and bad energy based on the circumstances. For example when we drive a combustion engine car, much of its input energy were transformed to heat in the engine or thermal energy. There are no use of having thermal energy while driving a car, especially in a hot day.
 
-When we say Tesla Model 3 are more energy efficient that The Mitsubishi Mirage, it's just that The Tesla Model are waste less of its energy than the Mitsubishi Mirage.
-
-So, the real question is where does energy go when we drive a car? and how much of it are being wasted?
+So, the real question is where does the energy go when we drive a car? and how much of it are being wasted?
 
 Most our energy are being used for these 3 tasks:
 - Energy transformation
 - Roll the wheels 
 - Power Auxiliary systems
 
-We'll now discover each task and its proportion in energy usage. To have a better illustration I'll fill both Combustion Engine Car and Electric Car a full tank of fuel. As we go through each tasks we will fill out its proportion in energy usage.
+We'll now discover each task and its proportion in energy usage. To have a better illustration I'll fill Combustion Engine Car with a full tank of gasoline and Electric Car a fully charged battery. As we go through each tasks we will fill out its proportion in energy usage.
 
 <img src="https://qnkhuat.github.io/plotly-charts/ev-vs-ce/plots/where_is_the_energy_go_full_fuel.png" style="width:100%" class="img-center">
 
 ## Energy transformation[(6)](#6)
-Combustion engine cars can't use chemical energy to directly move the car, instead it has to transform gasoline to kinetic energy by burn the compressed gasoline to generate explosion in the pistons which create force to rotate the shaft that connected to the wheels. As a result we gererated alot of heats, you can fill it just by standing next to an active cars. In fact 68% of the the energy are being converted to 
+Both Combustion engine and Electric Car Motor have the same purpose : It takes in energy in the form of chemical, transform it to kinetic energy. But there are a big different in how they do it.
 
-3/4 of the energy goes into the energy are being converted to heat. This makes combusion engine one of the least effective machine.
-
+Combustion engine work on the principle of the ideal gas law: it compresses gasoline then ignite it in order to generate an explosion inside the cylinder. The explosion propel the piston which is connected to the wheels through a crankshaft. A side effect of this process is it generates a lot of heat from the explosion and frictions between the piston and cylinder.
 <img src="https://qnkhuat.github.io/plotly-charts/ev-vs-ce/plots/where_is_the_energy_go_energy_conversion.png" style="width:100%" class="img-center">
 
-The Combustion Engine are an ineffective machine, most of the energy are converted to thermal energy which basically means heat.
 
 ## Roll the wheels 
+A lot of our input energy are used to fight against the wind, that's why Elon Musk trying to build a hyperloop because there is no wind there baby.
 <img src="https://qnkhuat.github.io/plotly-charts/ev-vs-ce/plots/where_is_the_energy_go_power_to_wheels.png" style="width:100%" class="img-center">
 <img src="https://qnkhuat.github.io/plotly-charts/ev-vs-ce/plots/where_is_the_energy_go_power_to_wheels_with_rb.png" style="width:100%" class="img-center">
 
@@ -119,6 +121,10 @@ This is one of the reason why the Tesla Model S P100D could go from 0-100km/h in
 [Energy Conversion Effiency](https://en.wikipedia.org/wiki/Energy_conversion_efficiency)
 
 
+#####(7)
+[Principles of Combustion engine](https://energyeducation.ca/encyclopedia/Internal_combustion_engine)
+
+
 This ratio tell how effective the cars use the input energy(in the form of gas or electric). For example if $$\eta_{e} = 30\%$$ means just 30% of the input energy are converted to useful energy which put our car to move, 70% are wasted energy like heat or swirling the air.
 <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" 
     src="https://qnkhuat.github.io/plotly-charts/ev-vs-ce/plots/where_is_the_energy_go_power_conversion.html" 
@@ -159,3 +165,8 @@ It might be confused to some when we use the L/100km unit for electric cars. The
 
 Even though Electric Cars don't use fuel directly, The number L/100km for electric cars is the equivalent liters of gas to generate electric to run 100km.
 
+
+
+NOTE For the graph
+- the last graph text are too small
+    - don't use text - {percentage} people might mistaken it is a minus sign
