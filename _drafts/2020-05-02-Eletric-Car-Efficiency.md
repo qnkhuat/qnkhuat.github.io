@@ -9,7 +9,7 @@ __TL;DR__ : Electric Vehicles are __5__ times more energy efficient than fossil 
 
 Terms : 
 - Electric Vehicle (EV): Vehicles powered by 100% electric.
-- Internet Combustion Engine Vehicle (ICE Vehicle) : Vehicles powered by fossil fuels (Gas or Diesel).
+- Internal Combustion Engine Vehicle (ICE Vehicle) : Vehicles powered by fossil fuels (Gas or Diesel).
 - Hybrid Vehicle (HV) : Vehicles use more than 1 power source, often is a combination of fossil fuels and electric.
 - L/100km : the unit of measurement for how many liters of fuel a vehicle consumes to travel 100km. We'll use this number to compare the efficiency of vehicles.
 
@@ -24,7 +24,7 @@ With the hybrid Toyora Prius using both electric and gasoline consumes 4.2 L/100
 
 ## A broader aspect[(2)](#2)
 
-One car is hardly be able to speak for its industry, so this chart shows the fuel economy of each Automotive Industry from 1985 to 2020.
+One car model is hardly be able to speak for its industry, so this chart shows the fuel economy of each Automotive Industry from 1985 to 2020.
 <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" 
     src="https://qnkhuat.github.io/plotly-charts/ev-vs-ce/plots/gas_hybrid_electric_1985-2020.html" 
     height="525" width="100%"></iframe>
@@ -48,49 +48,80 @@ When we say Tesla Model 3 are more energy efficient than Mitsubishi Mirage, it's
 So, Touching to the heart of this question is the problem of energy, and to tackle this problem it's necessary to recall The law of conservation of energy:
 > Energy can neither be created nor destroyed; rather, it can only be transformed or transferred from one form to another.
 
-There are good and bad energy based on circumstances. For example when we drive an ICE vehicle, much of its input energy were transformed to heat in the engine (or thermal energy). There are no use of having thermal energy while driving a car, what we need is kinetic energy.
+There are good and bad energy based on circumstances. For example when we drive an ICE vehicle, much of its input energy were transformed to heat in the engine (or thermal energy). There are no use of having thermal energy while driving a car, what we want is __kinetic energy__.
 
 So, the real question is where does the energy go when we drive a car? and how much of it is being wasted?
 
 Turns out, Most the energy are used for these 3 tasks:
 - Energy transformation
-- Roll the wheels 
+- Overcome rolling and air resistant
 - Power Auxiliary systems
 
-We'll now discover each task and its proportion in energy usage. To have a better illustration I'll fill ICE Car with a full tank of gasoline and Electric Car a fully charged battery. As we go through each tasks we will fill out its proportion in energy usage.
+We'll now discover each task and its proportion in energy usage.
+To have a better illustration I'll fill ICE Vehcile with a full tank of gasoline and EV a fully charged battery.
+As we go through each tasks we will fill out its proportion in energy usage.
 
 <img src="https://qnkhuat.github.io/plotly-charts/ev-vs-ce/plots/where_is_the_energy_go_full_fuel.png" style="width:100%" class="img-center">
 
 ## Energy transformation[(6)](#6)
-Both ICE and EV's Motor have the same purpose: It takes in energy in the form of chemical, transform it to kinetic energy. But the a different is its underlying mechanism.
+Both ICE and EV's Motor have the same purpose: takes in energy in the form of chemical and transform it to kinetic energy. But the different is in their underlying mechanisms that lead to the different in effciency.
 
 ### ICE
-ICE work on the principle of the ideal gas law, meaning by raising the temperature of a gas it'll increases the pressure and make the gas want to expand. 
+ICE work on the principle of the ideal gas law, meaning by raising the temperature of a gas it'll increases the pressure and cause the gas to expand. 
 
-Here is a short(thougth still complexed) explanation of how an ICE works: By compressing gasoline and ignite it the engine generate an explosion inside the cylinders.
-The explosion then propel the pistons which connected to a crankshaft to generate a rotation motion.
-The Rotation motion is then passed through the tranmission. Finally the wheels are connected to the transmission to move the vehicle.
+Here is a short (thougth still complexed) explanation of how an ICE works: By compressing gasoline and ignite it, the engine generate an explosion inside the cylinders. 
+The explosion push the piston, which in turn rotates the crankshaft.
+Ultimately, through a system of gears and transmission in the powertrain, this motion drives the vehicle's wheels.
 
-The purpose of having a tramission is to keep the engine perform at it most effiecny RPM (Revolutions per Minute) range so that the engine is not overloaded and wasted too much fuel.
+The purpose of having a tramission is to keep the engine perform at it most effective RPM (Revolutions per Minute) range, so that the engine is not overloaded and wasted too much fuel. The effective RPM range is varied between engines. 
 
-The side effect of this process is it generates a lot of wasted heat from the explosion and frictions between the piston and cylinder. By "a lot" we are talking about 68-80% of our input energy has been turned to heat. 
+The side effect of ICE's process is it generates a lot of wasted heat from the explosion and frictions between the piston and cylinder. 
+And by "a lot" we are talking about __68-80%__ of our input energy has been wasted in the form of heat. 
 
 ### Electric Motor
-The successives of Tesla cars is powered by the three-phase Induction Motor technology and Alternating-Current(AC) Power transmission invented by Nikola Tesla.
+The successes of most electric vehciles is powered by the three-phase Induction Motor technology and Alternating-Current(AC) Power transmission invented by Nikola Tesla.
 
-An Induction Motor consists of 2 parts : 
-- A Stator is a fixed part of induction motor that connected to the battery.
-- A rotor is a rotating part that placed inside the stator.
+An Induction Motor consists of: 
+- A Stator, the fixed part of induction motor connect to the battery.
+- A Rotor, the rotating part placed inside the stator and connect to the wheels.
 
-When the stator is passed with an AC current, It'll create a Rotation Magnetic Field(RMF) that will rotate the rotor inside. We then just need to connect the rotor to the wheels.
-Since the induction motor work at effectively at a wide range of RPM, there for, in a typical EV we are not going to see any transmission.
+In a three-phase Induction Motor there are 3 wires arrange in a way that they are each shifted 120° from each other. Each of these wires are connected to an AC power. 
+Interestingly as it is when an AC current is provided, the 3 wires create a Rotation Magnetic Field(RMF) that will rotate the rotor inside. 
+We then just need to connect the rotor to the wheels to have our vehicle rolling.
 
-Going through this process, the Induction Motor just lose less than 20% of its input energy to heat. With some systems, the induction motor even lose just 1% of its input energy.
+Because the induction motor work effectively at a wide range of RPM, there for, we rarely see the use of transmission in side an EV. 
+
+There are a missing piece in the flow above, Our battery can't directly provide an AC current, we need to use a converter to convert from DC to AC. 
+This converter also act as the speed controller of the motor. By changing the frequency of the AC current, it'll change the speed of RMF which will change the speed of our rotor or wheels.
+
+##### NOTE : Consider converted all the charts to chart type that exactly like the one on twitter
+
+Going through this process (including the loss in DC/AC converter), the Induction Motor lose less than 20% of its input energy to heat. With some systems, the induction motor even lose just 1% of its input energy.
 
 <img src="https://qnkhuat.github.io/plotly-charts/ev-vs-ce/plots/where_is_the_energy_go_energy_conversion.png" style="width:100%" class="img-center">
 
-## Roll the wheels 
+## Overcome rolling and air resistant
 NOTE: Skim through what air resistance, rolling resistance is and that is not actually the matter of machien technology to improve this but it's about the arodynamic of the cars and tire effiency.
+
+We have make the energy reached our wheels, this is the part we use those energy to:
+- Swirling air
+- Winning the road friction
+- Speeding up then slowing down using brakes
+
+While the vehicle moving it makes air swirling around and leaves behind a tube a air moving with the similar speed of the car. That mean the faster the car move the more energy is used to swirling the air.
+
+In automotive design there is a measure called drag coefficient that basically tell how good a vehicle passes through the surrounding air. 
+And to reduce the energy usage in swirling air we need to focus the aerodynamics design of the car, not whether it is powered by Electric or Fossil Fuel.
+
+Just like Swirling air, winning the road friction is not different between ICE or Elecitrc Motor. Friction is about how well we designed our Tire and how much the car weigh.
+
+So we'll not discuss deeply about Swirling air and Road friction in this essay. But brakes is an interesting topic.
+
+### Swirling air and winning the road friction
+
+When ever we kick the pedal the engine generate kinetic energy to move the vehicle forward a
+
+When we accelerate the engine gives the car kinetic energy and braking throws that kinetic energy away.
 
 What make it different is the regen braking system.
 
@@ -105,14 +136,14 @@ A lot of our input energy are used to fight against the wind, that's why Elon Mu
 <img src="https://qnkhuat.github.io/plotly-charts/ev-vs-ce/plots/where_is_the_energy_go_power_to_wheels_with_rb.png" style="width:100%" class="img-center">
 
 This is where the energy being used to do the real work including :
-- Slow dow down using brakes
 - Winning the traction between the vehicles and the road.
 - Air resistance 
+- Slowing down using brakes
 
 But there are an important factor that makes EVs awesome: Regenerative brake technology.
 By principles, when ever the rotor rotate faster than the Rotation Magnetic Field, the Induction Motor will turn to be a generator that can re-charge the battery. So when ever we slowing down or going down hill, the car will re-charge itself.
 
-This is very effieciece especially for city-driving when we use energy to accelerate then waste that energy with break repeatedly. Now with the re-generative braking system we can recover about 17% of our input energy. And the cool thing is we could go mostly with the the pedal in EVs.
+It is curicial especially for city-driving when we use energy to accelerate then waste that energy with brake repeatedly. Now with the re-generative braking system we can recover about 17% of our input energy.
 
 ## Power Auxiliarary Electrical 
 <img src="https://qnkhuat.github.io/plotly-charts/ev-vs-ce/plots/where_is_the_energy_go_left_over.png" style="width:100%" class="img-center">
@@ -136,9 +167,11 @@ There are not much data on the cost to maintain an EV, but as pointed out in "Cl
 
 
 # Why do we care about fuel efficiency anyway?
+As of 2010, Transportation is accounted for 14% of the total Greenhouse Gas(GHG) Emissions globally and it's heavily depends on burning fossil fuels. 
+So if we can find a more effience way of transportation that mean will can still keep our our need to transport but reduce our GHG emissions.
 
 # Is electric vehicles the final answer?
-I hope, it's not.
+I believe, it's not.
 
 It'd be much better if we have vehicles powered by solar energy. In fact, we've had it, it's just that the efficiency are low and the range is too short to meet our need. But when the solar energy are mature enough, we'd have the transition from EVs to solar powered vehicles. 
 
@@ -168,6 +201,13 @@ This is one of the reason why the Tesla Model S P100D could go from 0-100km/h in
 
 ##### (7)
 [Principles of Combustion engine](https://energyeducation.ca/encyclopedia/Internal_combustion_engine)
+
+##### (8)
+[Combustion Engine Basic](https://www.energy.gov/eere/vehicles/articles/internal-combustion-engine-basics)
+
+
+#### a
+[How Does An Electric Motor work](https://www.saveonenergy.com/how-does-electric-car-motor-work/)
 
 https://matter2energy.wordpress.com/2013/02/22/wells-to-wheels-electric-car-efficiency/
 
