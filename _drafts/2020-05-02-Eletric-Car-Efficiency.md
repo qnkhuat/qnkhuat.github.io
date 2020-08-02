@@ -43,14 +43,15 @@ The __L/100km__ for EVs are the equivalent liters of gasoline to generate electr
 The advantage of using a single unit of comparision is it helps us easily understand and visualize the difference between ICE and EV vehicles in energy consumption. 
 
 # How do EVs achieve this efficiency?
+It's not magic, it's all benefits from more utlized powertrain system, better technology and modular architecture.
 
 When we say Tesla Model 3 are more energy efficient than Mitsubishi Mirage, it's just that The Tesla Model 3 waste less of its input energy than the Mitsubishi Mirage.
-Touching to the heart of this question is the problem of energy, and to fully understand and answer the question, it's necessary to recall The law of conservation of energy:
+Touching to the heart of this question is the problem of energy, and to fully understand and answer it, we need to recall The law of conservation of energy:
 > Energy can neither be created nor destroyed; rather, it can only be transformed or transferred from one form to another.
 
-There are good and bad energy based on when and why. 
-For example when we drive an ICE vehicle, much of its input energy were transformed to heat in the engine (or thermal energy). 
-Clearly there are not much use of having thermal energy while driving a car, what we want is __kinetic energy__.
+There are good and bad energy based on which situation it is produced.
+For example when we drive an ICE vehicle, much of its input energy were transformed to heat in the engine (or thermal energy).
+Clearly there are not much use of having thermal energy while driving a car, what we need is __kinetic energy__.
 
 So, the real question is where does the energy go when we drive a car? and how much of it is being wasted?
 
@@ -69,17 +70,22 @@ As we go through each tasks we will fill out its proportion in energy usage.
 Both ICE and EV's Motor have the same purpose: they take in energy in the form of chemical and transform it to __kinetic energy__. But the different is in their underlying mechanisms that lead to the different in effciency.
 
 ### ICE
-ICE work on the principle of the ideal gas law, meaning by raising the temperature it'll increases the pressure and cause the gas to expand. 
+Here is a short explanation of how an ICE works:
+- ICE work on the principle of the ideal gas law: Raising the temperature of a gas increases the pressure that make the gas want to expand.
+- Using this characteristic of gas, we mix air with gasoline then compress it inside our cylinders by a piston.
+- The compression enforce the mixture of gasoline and air to explode. This explosion propel the pistons in a linear motion.
+- Convert the linear motion to rotational motion by connect pistons to a crankshaft.
+- Ultimately, the crankshaft will be connected to the wheels.
 
-Here is a short (thougth still complexed) explanation of how an ICE works: The powertrain starts by compressing gasoline and ignite it to generate an explosion within the cylinders. 
-The explosion proppel pistons in a linear motion then being converted to rotational motion by connect pistons with a crankshaft.
-The rotational motion of crankshaft is then being passed through a transmission.
-Ultimately, this motion drives the vehicle's wheels.
-
-Because ICE can only produce maximum torque at a small range of RPM(Revolutions per minute), so we have to use a transmission to keep the engine operates at its most effectie RMP while allowing the wheels to rotate at various speed.
+One of ICE's limitation is it can only produces maximum torque at a small range of RPM(Revolutions per minute).
+On the contrary, we need the car to run at various speed range, so we have to use a transmission to 
+so we have to use a transmission to keep the engine operates at its most effectie RMP while allowing the wheels to rotate at various speed.
 
 The side effect of ICE's process is it has to generate a lot of heat from the explosion in order to produce work.
-And by "a lot" we are talking about __68-80%__ of the input energy has been wasted in the form of heat.
+And by "a lot" we are talking about __74%__ of the input energy has been wasted in the form of heat. Or the effiency of ICE engine is __26%__.
+
+I need you to remember this number so here is an analogy: Think of the engine as our digestion system, if it has the effiency of 26% that mean only 26% calories of what we eat is being used for walking, thinking, imagining... __74%__ has been used by our digest system for converting raw food to energy. 
+For a typical man that needs 2500 Calories a day, he has to eat 9600 Calories per day, which is equal to : 62 eggs or ~3.84 Kg of beef or ~23L of cow's milk. 
 
 ### Electric Motor
 The successes of most electric vehciles are powered by the three-phase Induction Motor and Alternating-Current(AC) Power invented by Nikola Tesla.
@@ -88,7 +94,7 @@ An Induction Motor consists of:
 - A Stator, the fixed part of induction motor that is connected to the battery.
 - A Rotor, the rotating part placed inside the stator and connect to the wheels.
 
-In a three-phase Induction Motor there are 3 wires arrange in a way that they are each shifted 120° from each other, and each of them are connected to an AC power. 
+In a three-phase Induction Motor there are 3 wires arranged in a way that they are each shifted 120° from each other, and each of them are connected to an AC power. 
 Interestingly as it is when an AC current is provided, the 3 wires create a Rotation Magnetic Field(RMF) that will rotate the rotor inside it. 
 We then just need to connect the rotor to the wheels to have our vehicle rolling.
 
@@ -104,7 +110,7 @@ This is one of the reason why the Tesla Model S P100D can go from 0-100km/h in 2
 There is a missing piece, Our battery can't directly provide an AC current, we need to use a converter to convert from DC to AC. 
 This converter also act as the speed controller of the motor. By changing the frequency of the AC current, it'll change the speed of RMF which will change the speed of our rotor.
 
-Going through this process (including the loss in DC/AC converter), the Induction Motor lose less than 20% of its input energy to heat. With some systems, the induction motor even lose just 1% of its input energy.
+Going through this process (including the loss in DC/AC converter), the Induction Motor loses less than 20% of its input energy to heat. With some systems, the induction motor even lose just 1% of its input energy.
 
 <img src="https://qnkhuat.github.io/plotly-charts/ev-vs-ce/plots/where_is_the_energy_go_energy_conversion.png" style="width:100%" class="img-center">
 
@@ -118,13 +124,13 @@ We have make the energy reached our wheels, this is the part we use those energy
 ### Swirling air
 
 While the vehicle is moving, it makes air swirling around and leaves behind a tube of air moving with the similar speed of the car. 
-That mean the faster the car move the more energy is used to swirl air.
+That mean the faster the car move, the more energy is used to swirl air.
 <figure class='img-center' style="width:40%">
     <img src="/assets/img/posts/car_swirling_air.png" />
     <figcaption style='text-align:center; font-size:13px; color:gray;'>Car swirl air while moving</figcaption>
 </figure>
 
-In automotive design there is a measure called drag coefficient that basically tell how good a vehicle passes through air while moving.
+In automotive design there is a measure called drag coefficient that tell how effecient a vehicle passes through air while moving.
 And to reduce the energy of car in swirling air, it's the study of aerodynamics, not about whether the vehicle is powered by electric or fossil fuel. 
 Therefor we'll not discuss further about this topic in this essay.
 
