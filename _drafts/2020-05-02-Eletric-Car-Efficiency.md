@@ -43,49 +43,49 @@ The __L/100km__ for EVs are the equivalent liters of gasoline to generate electr
 The advantage of using a single unit of comparision is it helps us easily understand and visualize the difference between ICE and EV vehicles in energy consumption. 
 
 # So, How EVs are 4.7 times more efficient than ICE vehicles?
-It's not magic, it's all benefits from more utlized powertrain system, better technology and modular architecture.
 
 When we say Tesla Model 3 are more energy efficient than Mitsubishi Mirage, it's just that The Tesla Model 3 waste less of its input energy than the Mitsubishi Mirage.
 Touching to the heart of this question is the problem of energy, and to fully understand and answer it, we need to recall The law of conservation of energy:
 > Energy can neither be created nor destroyed; rather, it can only be transformed or transferred from one form to another.
 
-This mean that There are good and bad energy based on which situation it is produced.
-For example when we drive an ICE vehicle, much of its input energy were transformed to heat in the engine (or thermal energy).
+This mean there are good and bad energy based on which situation it is produced.
+For example when we drive an ICE vehicle, much of our input energy were transformed to heat in the engine (or thermal energy).
 Clearly there are not much use of having thermal energy while driving a car; what we need is __kinetic energy__.
 
-So, let's dive deeper to understand where does the energy on when we drive a car and find out how much of it is being wasted?
+So, let's dive deeper to understand where does the energy go when we drive a car and find out how much of it is being wasted?
 
 Turns out, Most the energy are used for these 3 tasks:
 - Energy transformation
 - Overcome rolling and air resistant
 - Power Auxiliary systems
 
-We'll now discover each task and its proportion in energy usage.
-To have a better illustration I'll fill ICE Vehicle with a full tank of gasoline and EV a fully charged battery.
+We'll now discover each task and to have a better illustration, I'll fill ICE Vehicle with a full tank of gasoline and EV a fully charged battery.
 As we go through each tasks we will fill in its proportion in energy usage.
 
 <img src="https://qnkhuat.github.io/plotly-charts/ev-vs-ce/plots/where_is_the_energy_go_full_fuel.png" style="width:100%" class="img-center">
 
 ## Energy transformation[(6)](#6)
-Both ICE and EV's Motor have the same purpose: they take in energy in the form of chemical and transform it to __kinetic energy__. But the different is in their underlying mechanisms that lead to the different in effciency.
+Both ICE and EV's Motor do the same thing: they take in energy in the form of chemical and transform it to __kinetic energy__. But the different is in their underlying mechanisms that lead to the different in effciency.
 
 ### ICE
 Here is a short explanation of how an ICE works:
 - ICE work on the principle of the ideal gas law: Raising the temperature of a gas increases the pressure that make the gas want to expand.
-- Using this characteristic of gas, we mix air with gasoline then compress it inside our cylinders by a piston.
+- Using this principle, we mix air with gasoline then compress it inside our cylinders by a piston.
 - The compression enforce the mixture of gasoline and air to explode. This explosion propel the pistons in a linear motion.
 - Convert the linear motion to rotational motion by connect pistons to a crankshaft.
-- Ultimately, the crankshaft will be connected to the wheels.
+- Ultimately, the rotational motion will be transfered to the wheels via a transmission.
 
-One of ICE's limitations is it can only produces maximum [torque](#torque) at a small range of RPM(Revolutions per minute).
-On the contrary, we need the car to run at various speed range, so we have to use a transmission to maintain the engine operates at its most efficient RPM while allowing the wheels to rotate at various speed.
+
+
+One of ICE's limitations is it can only produces maximum [torque](#torque) at a small range of RPM(Revolutions per minute), but we need the car to run at various speed range. 
+That's why ICE vehicles need a tranmission to adapt the output of engine with the vehicle's speed.
 
 The side effect of ICE's powertrain is it has to generate a lot of heat from the explosion to produce work.
 And by "a lot" we are talking about __74%__ of the input energy is wasted in the form of heat. Or the effiency of ICE engine is __26%__.
 
 I need you to remember this number because it shows how ineffective the ICE is. 
-Here is an analogy: Think of the engine as our digestion system, if it has the effiency of 26% that mean only 26% calories of what we eat is being used for walking, thinking, imagining... 74% is used by our digest system for converting raw food to energy. 
-For a typical man that needs 2500 Calories a day he has to ingest 9600 Calories, which is equal to : 62 eggs or 3.84 Kg of beef or 23L of cow's milk. 
+Think of the engine as our digestion system, if it has the effiency of 26% that mean only 26% calories of what we eat is being used for walking, thinking, imagining... 74% is used by our digest system for converting raw food to energy. 
+For a man that needs 2500 Calories a day he has to ingest 9600 Calories, which is equal to : 62 eggs or 3.84 Kg of beef or 23L of cow's milk. 
 
 ### Electric Motor
 The successes of most electric vehciles are powered by the three-phase Induction Motor and Alternating-Current(AC) Power invented by Nikola Tesla.
@@ -95,7 +95,7 @@ An Induction Motor consists of:
 - A Rotor, the rotating part placed inside the stator and connect to the wheels.
 
 In a three-phase Induction Motor there are 3 wires arranged in a way that they are each shifted 120° from each other, and each of them are connected to an AC power.
-When an AC current is provided, the 3 wires create a Rotation Magnetic Field(RMF) that will rotate the rotor inside it.
+When an AC current is provided, the 3 wires together create a Rotating Magnetic Field(RMF) that will rotate the rotor inside it.
 We then just need to connect the rotor to the wheels to have our vehicle rolling.
 
 The induction motor can produce maximum torque at 0 RPM. 
@@ -108,7 +108,7 @@ This is one of the reason why the Tesla Model S P100D can go from 0-100km/h in 2
 </figure>
 
 There is a missing piece, Our battery can't directly provide an AC current, we need to use a converter to convert from DC to AC. 
-This converter also act as the speed controller of the motor by changing the frequency of the AC current, it'll change the speed of RMF and result in changing rotational speed of our rotor.
+This converter also act as the speed controller of the motor. By changing the frequency of the AC current, it'll change the speed of RMF and result in changing rotational speed of our rotor.
 
 Going through this process (including the loss in DC/AC converter), the Induction Motor loses less than 20% of its input energy to heat. With some systems, the induction motor even lose just 1% of its input energy.
 
@@ -153,17 +153,17 @@ Both Swirling air and overcome road friction is classied as good use of energy w
 <img src="https://qnkhuat.github.io/plotly-charts/ev-vs-ce/plots/where_is_the_energy_go_power_to_wheels.png" style="width:100%" class="img-center">
 
 ### Speeding up then slowing down using brakes
-When we accelerate the engine gives the car kinetic energy and braking throws that kinetic energy away, this is why high-way drive consumes less energy than city-driving.
+When we accelerate the engine gives the car kinetic energy and braking throws that kinetic energy away. Especially in city-driving, we waste a lot of energy for this process. 
 
-But here is an interesting idea: why don't we capture that thown away kinetic energy?
+But here is an interesting but straight forward  question: Can we capture those thrown away energy?
 
 With ICE vehicles it's not much we can do because most of the energy kinetic energy has been converted to heat on the brake already. 
 But with Induction Motor we can recover up to 70% of the braking energy with regenerative braking.
 
 The principle of Regerative braking is when you take your foot of the pedal, you cut power to the motors, this make the motor slow down. 
-Now the rotational speed of the wheels is faster than the rotational of the motor, when this happens, the motor turn into a generator and charge energy back to the battery.
+Now the wheels are rotating faster than the motor, when this happens, the motor turn itself into a generator and re-charge energy to the battery.
 
-It is curicial especially for city-driving, because the we have the cycle of speeding up and slowing down is very short. With the re-generative braking system we can now recover about 17% of our input energy.
+With the re-generative braking system we can now recover about up to 34% for city driving and about 17% for both city and highway driving combined
 
 <img src="https://qnkhuat.github.io/plotly-charts/ev-vs-ce/plots/where_is_the_energy_go_power_to_wheels_with_rb.png" style="width:100%" class="img-center">
 
