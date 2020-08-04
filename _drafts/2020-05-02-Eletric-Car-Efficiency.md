@@ -5,7 +5,7 @@ categories: climate
 permalink: ev
 ---
 
-__TL;DR__ : Electric Vehicles are __5__ times more energy efficient than fossil Fuel powered Vehicles.
+__TL;DR__: Electric Vehicles are __5__ times more energy efficient than fossil Fuel powered Vehicles.
 
 Terms : 
 - Electric Vehicle (EV): Vehicles powered by 100% electric.
@@ -16,9 +16,9 @@ Terms :
 # Facts checking
 <img src="https://qnkhuat.github.io/plotly-charts/ev-vs-ce/plots/top_fuel_consumption_by_sector_2019.png" style="width:100%" class="img-center">
 
-This chart shows the comparision between 3 cars represent for 3 vehicle types: ICE Vehicles, EVs, Hybrid Vehicles. Each of them are the most fuel effcient in their league based on data from [United States Environmental Protection](https://www.epa.gov). They have been keeping track fuel economy of over 42000 cars models since 1985.
+This chart shows the comparision between 3 cars represent for 3 vehicle types: ICE Vehicles, EVs, Hybrid Vehicles. Each of them are the most fuel effcient in their league measured by [United States Environmental Protection](https://www.epa.gov). They have been keeping track fuel economy of over 42000 cars models since 1985.
 
-Best in ICE league, The Mitsubishit Mirage comsume about 6 Liters of Gasoline to travel 100km, It's __3.5__ times higher than the Tesla Model 3 which consumes just 1.7L/100km.
+Best in ICE league is the Mitsubishit Mirage, It comsumes about 6 Liters of Gasoline to travel 100km, It's __3.5__ times higher than the Tesla Model 3 which consumes just 1.7L/100km.
 
 Even With the hybrid Toyora Prius using both electric and gasoline consumes 4.2 L/100km, still __2.5__ times higher than Tesla Model 3.
 
@@ -31,29 +31,29 @@ One car model is hardly be able to speak for its industry, so this chart shows t
 
 As of 2020, The ICE vehicles Industry consumes 10.88 L/100km on average - __4.7__ times higher than the EVs Industry which consumes 2.29 L/100km.
 
-It's important to note that the ICE Vehicles Industry has started with the sucessful Ford Model T in 1908. And the first EV were allowed to run on highway is Tesla Roadster in 2004.
+It's important to note that the ICE Vehicles Industry has started with the sucessful Ford Model T in 1908, and the first EV were allowed to run on highway is Tesla Roadster in 2004.
 It's almost one century ahead of development for ICE vehicles.
 
 ## Clarification
 
-I try to write my essays in the way I deliver facts, In order to achieve this I need to clarify about our unit of comparision - __L/100km__. Primarly, this unit is used to measure the fuel economy of ICE vehicles, For EVs we often use __km/kWh__.
-But I'll keep using the unit __L/100km__ when discussing about fuel economy of EVs. 
+I try to write my essays in the way I deliver facts, so I want to clarify about our unit of comparision - __L/100km__.
+Primarly, this unit is used to measure the fuel economy of ICE vehicles, For EVs we often use __km/kWh__, But I'll keep using the unit __L/100km__ when discussing about fuel economy of EVs. 
 
 The __L/100km__ for EVs are the equivalent liters of gasoline to generate electric for an EV to travel 100km. 
 The advantage of using a single unit of comparision is it helps us easily understand and visualize the difference between ICE and EV vehicles in energy consumption. 
 
-# How do EVs achieve this efficiency?
+# So, How EVs are 4.7 times more efficient than ICE vehicles?
 It's not magic, it's all benefits from more utlized powertrain system, better technology and modular architecture.
 
 When we say Tesla Model 3 are more energy efficient than Mitsubishi Mirage, it's just that The Tesla Model 3 waste less of its input energy than the Mitsubishi Mirage.
 Touching to the heart of this question is the problem of energy, and to fully understand and answer it, we need to recall The law of conservation of energy:
 > Energy can neither be created nor destroyed; rather, it can only be transformed or transferred from one form to another.
 
-There are good and bad energy based on which situation it is produced.
+This mean that There are good and bad energy based on which situation it is produced.
 For example when we drive an ICE vehicle, much of its input energy were transformed to heat in the engine (or thermal energy).
-Clearly there are not much use of having thermal energy while driving a car, what we need is __kinetic energy__.
+Clearly there are not much use of having thermal energy while driving a car; what we need is __kinetic energy__.
 
-So, the real question is where does the energy go when we drive a car? and how much of it is being wasted?
+So, let's dive deeper to understand where does the energy on when we drive a car and find out how much of it is being wasted?
 
 Turns out, Most the energy are used for these 3 tasks:
 - Energy transformation
@@ -62,7 +62,7 @@ Turns out, Most the energy are used for these 3 tasks:
 
 We'll now discover each task and its proportion in energy usage.
 To have a better illustration I'll fill ICE Vehicle with a full tank of gasoline and EV a fully charged battery.
-As we go through each tasks we will fill out its proportion in energy usage.
+As we go through each tasks we will fill in its proportion in energy usage.
 
 <img src="https://qnkhuat.github.io/plotly-charts/ev-vs-ce/plots/where_is_the_energy_go_full_fuel.png" style="width:100%" class="img-center">
 
@@ -77,15 +77,15 @@ Here is a short explanation of how an ICE works:
 - Convert the linear motion to rotational motion by connect pistons to a crankshaft.
 - Ultimately, the crankshaft will be connected to the wheels.
 
-One of ICE's limitation is it can only produces maximum torque at a small range of RPM(Revolutions per minute).
-On the contrary, we need the car to run at various speed range, so we have to use a transmission to 
-so we have to use a transmission to keep the engine operates at its most effectie RMP while allowing the wheels to rotate at various speed.
+One of ICE's limitations is it can only produces maximum [torque](#torque) at a small range of RPM(Revolutions per minute).
+On the contrary, we need the car to run at various speed range, so we have to use a transmission to maintain the engine operates at its most efficient RPM while allowing the wheels to rotate at various speed.
 
-The side effect of ICE's process is it has to generate a lot of heat from the explosion in order to produce work.
-And by "a lot" we are talking about __74%__ of the input energy has been wasted in the form of heat. Or the effiency of ICE engine is __26%__.
+The side effect of ICE's powertrain is it has to generate a lot of heat from the explosion to produce work.
+And by "a lot" we are talking about __74%__ of the input energy is wasted in the form of heat. Or the effiency of ICE engine is __26%__.
 
-I need you to remember this number so here is an analogy: Think of the engine as our digestion system, if it has the effiency of 26% that mean only 26% calories of what we eat is being used for walking, thinking, imagining... __74%__ has been used by our digest system for converting raw food to energy. 
-For a typical man that needs 2500 Calories a day, he has to eat 9600 Calories per day, which is equal to : 62 eggs or ~3.84 Kg of beef or ~23L of cow's milk. 
+I need you to remember this number because it shows how ineffective the ICE is. 
+Here is an analogy: Think of the engine as our digestion system, if it has the effiency of 26% that mean only 26% calories of what we eat is being used for walking, thinking, imagining... 74% is used by our digest system for converting raw food to energy. 
+For a typical man that needs 2500 Calories a day he has to ingest 9600 Calories, which is equal to : 62 eggs or 3.84 Kg of beef or 23L of cow's milk. 
 
 ### Electric Motor
 The successes of most electric vehciles are powered by the three-phase Induction Motor and Alternating-Current(AC) Power invented by Nikola Tesla.
@@ -94,12 +94,12 @@ An Induction Motor consists of:
 - A Stator, the fixed part of induction motor that is connected to the battery.
 - A Rotor, the rotating part placed inside the stator and connect to the wheels.
 
-In a three-phase Induction Motor there are 3 wires arranged in a way that they are each shifted 120° from each other, and each of them are connected to an AC power. 
-Interestingly as it is when an AC current is provided, the 3 wires create a Rotation Magnetic Field(RMF) that will rotate the rotor inside it. 
+In a three-phase Induction Motor there are 3 wires arranged in a way that they are each shifted 120° from each other, and each of them are connected to an AC power.
+When an AC current is provided, the 3 wires create a Rotation Magnetic Field(RMF) that will rotate the rotor inside it.
 We then just need to connect the rotor to the wheels to have our vehicle rolling.
 
-Because the induction motor can produce maximum torque at 0 RPM. 
-There for, we rarely see the use of transmission in side an EV. 
+The induction motor can produce maximum torque at 0 RPM. 
+There for we rarely see the use of transmission in side an EV. 
 This is one of the reason why the Tesla Model S P100D can go from 0-100km/h in 2.3 seconds - on the same league with Bugatti Chiron.
 
 <figure class='img-center' style="width:40%">
@@ -108,15 +108,17 @@ This is one of the reason why the Tesla Model S P100D can go from 0-100km/h in 2
 </figure>
 
 There is a missing piece, Our battery can't directly provide an AC current, we need to use a converter to convert from DC to AC. 
-This converter also act as the speed controller of the motor. By changing the frequency of the AC current, it'll change the speed of RMF which will change the speed of our rotor.
+This converter also act as the speed controller of the motor by changing the frequency of the AC current, it'll change the speed of RMF and result in changing rotational speed of our rotor.
 
 Going through this process (including the loss in DC/AC converter), the Induction Motor loses less than 20% of its input energy to heat. With some systems, the induction motor even lose just 1% of its input energy.
+
+To recap about energy transformation: ICE vehicles lose 74% of input energy and it is 20% for EVs.
 
 <img src="https://qnkhuat.github.io/plotly-charts/ev-vs-ce/plots/where_is_the_energy_go_energy_conversion.png" style="width:100%" class="img-center">
 
 ## Overcome rolling and air resistant
 
-We have make the energy reached our wheels, this is the part we use those energy to:
+We have make the energy reached our wheels, this is the part where we use those energy to:
 - Swirling air
 - Overcome road friction
 - Speeding up then slowing down using brakes
@@ -130,9 +132,15 @@ That mean the faster the car move, the more energy is used to swirl air.
     <figcaption style='text-align:center; font-size:13px; color:gray;'>Car swirl air while moving</figcaption>
 </figure>
 
-In automotive design there is a measure called drag coefficient that tell how effecient a vehicle passes through air while moving.
-And to reduce the energy of car in swirling air, it's the study of aerodynamics, not about whether the vehicle is powered by electric or fossil fuel. 
-Therefor we'll not discuss further about this topic in this essay.
+There are numbers of way to reduce energy usage in swirling air:
+- Reduce the frontal area
+- Round the edges of the frontal end
+- Use less friction materials for vehicle's frame
+- Install rear spoiler
+- Lower the vehicle
+- Use narrower tires
+
+This is where the study of areodynamics come in, much of it is about how we design the shape of our car so it is easier to pass through air. In automotive design there is a measure called drag coefficient that tell how effecient a vehicle passes through air while moving.
 
 ### Overcome road friction
 
@@ -227,6 +235,8 @@ This is one of the reason why the Tesla Model S P100D could go from 0-100km/h in
 https://www.tesla.com/blog/magic-tesla-roadster-regenerative-braking
 
 https://matter2energy.wordpress.com/2013/02/22/wells-to-wheels-electric-car-efficiency/
+
+https://www.edmunds.com/fuel-economy/improving-aerodynamics-to-boost-fuel-economy.html
 
 This ratio tell how effective the cars use the input energy(in the form of gas or electric). For example if $$\eta_{e} = 30\%$$ means just 30% of the input energy are converted to useful energy which put our car to move, 70% are wasted energy like heat or swirling the air.
 
