@@ -16,12 +16,12 @@ The water they used for drinking and cooking is pulled straight from a nearby ri
 
 
 Each class has around 7-9 students; each of them is at different ages. 
-There is 12 years old is still in second grade. Some of them start primary school at 8, some start then skipped several years. 
+There is a 12 years old kid that still in second grade. Some of them start primary school at 8, some started then skip several years. 
 Even in grade 5, some of them didn’t even know the alphabet. 
 Some are not even able to understand Vietnamese; they only know their minority language.
 
-One of the hardness of teachers here is to encourage parents to let their children go to school. 
-They have to go to each family to talk and convince parents to let their kids go to school. 
+One of the hardnesses of teachers here is to encourage parents to let their children go to school. 
+They have to go to each family to talk and convince them.
 The main reason they do is to get subsidized from school and have someone to watch their kids while they are working on the farm.
 
 …
