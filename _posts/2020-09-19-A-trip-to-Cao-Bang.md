@@ -4,10 +4,7 @@ title: "A trip to Cao Bang"
 categories: self
 permalink: caobang
 ---
-<figure style="width:50%" class="img-center">
-    <img src="/assets/img/posts/walking_kids.jpeg" />
-    <figcaption style='text-align:center; font-size:13px; color:gray;'></figcaption>
-</figure>
+<img src="/assets/img/posts/walking_kids.jpeg" class="img-center" style="width:50%"/>
 
 I took this picture during a volunteer work in Cao Bang. The kids are about 3-5 years old, walking in a group of 3 and on their daily to school. 
 
