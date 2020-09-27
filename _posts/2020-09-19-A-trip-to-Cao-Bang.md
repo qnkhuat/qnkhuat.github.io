@@ -30,7 +30,7 @@ The more I think about these kids, the more I realized how lucky I am.
 Lucky not in just living conditions, but also in terms of opportunity. 
 I wonder if these kids even know the concept of having a dream in life?
 
-But with this much of luckiness; Am I, living up to it?
+The question isL with this much of luckiness; Am I, living up to it?
 
 <figure style="width:100%" class="img-center">
     <img src="/assets/img/posts/kids_at_coc_pau.jpeg" />
