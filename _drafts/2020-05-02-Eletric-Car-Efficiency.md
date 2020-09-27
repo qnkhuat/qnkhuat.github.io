@@ -16,7 +16,7 @@ Terms :
 # Facts checking
 <img src="https://qnkhuat.github.io/plotly-charts/ev-vs-ce/plots/top_fuel_consumption_by_sector_2019.png" style="width:100%" class="img-center">
 
-This chart shows the comparision between 3 cars represent for 3 vehicle types: ICE Vehicles, EVs, Hybrid Vehicles. Each of them are the most fuel effcient in their league measured by [United States Environmental Protection](https://www.epa.gov). They have been keeping track fuel economy of over 42000 cars models since 1985.
+This chart shows the comparision between 3 cars represent for 3 vehicle types: ICE Vehicles, EVs, Hybrid Vehicles. Each of them are the most fuel effcient in their league based on data measured by [United States Environmental Protection](https://www.epa.gov). They have been keeping track fuel economy of over 42000 cars models since 1985.
 
 Best in ICE league is the Mitsubishit Mirage, It comsumes about 6 Liters of Gasoline to travel 100km, It's __3.5__ times higher than the Tesla Model 3 which consumes just 1.7L/100km.
 
@@ -37,7 +37,8 @@ It's almost one century ahead of development for ICE vehicles.
 ## Clarification
 
 I try to write my essays in the way I deliver facts, so I want to clarify about our unit of comparision - __L/100km__.
-Primarly, this unit is used to measure the fuel economy of ICE vehicles, For EVs we often use __km/kWh__, But I'll keep using the unit __L/100km__ when discussing about fuel economy of EVs. 
+Primarly, this unit is used to measure the fuel economy of ICE vehicles, for EVs we often use __km/kWh__.
+But I'll keep using the unit __L/100km__ when discussing about fuel economy of both EVs and ICE vehicles. 
 
 The __L/100km__ for EVs are the equivalent liters of gasoline to generate electric for an EV to travel 100km. 
 The advantage of using a single unit of comparision is it helps us easily understand and visualize the difference between ICE and EV vehicles in energy consumption. 
@@ -57,7 +58,7 @@ So, let's dive deeper to understand where does the energy go when we drive a car
 Turns out, Most the energy are used for these 3 tasks:
 - Energy transformation
 - Overcome rolling and air resistant
-- Power Auxiliary systems
+- Warming, cooling, electric drive systems, etc...
 
 We'll now discover each task and to have a better illustration, I'll fill ICE Vehicle with a full tank of gasoline and EV a fully charged battery.
 As we go through each tasks we will fill in its proportion in energy usage.
@@ -65,9 +66,15 @@ As we go through each tasks we will fill in its proportion in energy usage.
 <img src="https://qnkhuat.github.io/plotly-charts/ev-vs-ce/plots/where_is_the_energy_go_full_fuel.png" style="width:100%" class="img-center">
 
 ## Energy transformation[(6)](#6)
-Both ICE and EV's Motor do the same thing: they take in energy in the form of chemical and transform it to __kinetic energy__. But the different is in their underlying mechanisms that lead to the different in effciency.
+Both ICE and EV's Motor do the same thing: they take in chemical energy and transform it to __kinetic energy__. But the different is in their underlying mechanisms that lead to the different in effciency.
 
-### ICE
+### Internal Combusion Engine
+The working principles of an ICE vehicle consists of 2 main steps:
+1. Motion generation
+2. Motion transportation
+
+The step 1) happens inside our engine - a machine consists of multiple pairs of piston-cylinder. 
+
 Here is a short explanation of how an ICE works:
 - ICE work on the principle of the ideal gas law: Raising the temperature of a gas increases the pressure that make the gas want to expand.
 - Using this principle, we mix air with gasoline then compress it inside our cylinders by a piston.
@@ -98,9 +105,9 @@ In a three-phase Induction Motor there are 3 wires arranged in a way that they a
 When an AC current is provided, the 3 wires together create a Rotating Magnetic Field(RMF) that will rotate the rotor inside it.
 We then just need to connect the rotor to the wheels to have our vehicle rolling.
 
-The induction motor can produce maximum torque at 0 RPM. 
+By principles, the induction motor can produce maximum torque even at 0 RPM. 
 There for we rarely see the use of transmission in side an EV. 
-This is one of the reason why the Tesla Model S P100D can go from 0-100km/h in 2.3 seconds - on the same league with Bugatti Chiron.
+This is one of the reasons why the Tesla Model S P100D can go from 0-100km/h in 2.3 seconds - on the same league with Bugatti Chiron.
 
 <figure class='img-center' style="width:40%">
     <img src="/assets/img/posts/tesla_owner.jpg" />
@@ -116,12 +123,23 @@ To recap about energy transformation: ICE vehicles lose 74% of input energy and 
 
 <img src="https://qnkhuat.github.io/plotly-charts/ev-vs-ce/plots/where_is_the_energy_go_energy_conversion.png" style="width:100%" class="img-center">
 
+
 ## Overcome rolling and air resistant
 
-We have make the energy reached our wheels, this is the part where we use those energy to:
-- Swirling air
+We have made the energy reached our wheels, this is the part where we use those energy to:
 - Overcome road friction
+- Swirling air
 - Speeding up then slowing down using brakes
+
+### Overcome road friction
+
+By definition, friction is the force resisting the relative motion between surfaces sliding against each others, in our case it's the vehicle's tyres and the road.
+Without friction, we can't move our vehicles, and even if we can, our vehicle will slide and spin unstoppably on the road.
+That's also mean we need to use energy to overcome friction in order to move.
+This force is proportional to the vehicle's weight, independent of speed or vehicle's type.
+
+How much of energy we have to use is proportional to the vehicle's weight, independent of speed or vehicle's type. The constant of proportionality is called the coeffcient of rolling resistance. For cars, this coefficient
+
 
 ### Swirling air
 
@@ -129,24 +147,21 @@ While the vehicle is moving, it makes air swirling around and leaves behind a tu
 That mean the faster the car move, the more energy is used to swirl air.
 <figure class='img-center' style="width:40%">
     <img src="/assets/img/posts/car_swirling_air.png" />
-    <figcaption style='text-align:center; font-size:13px; color:gray;'>Car swirl air while moving</figcaption>
+    <figcaption style='text-align:center; font-size:13px; color:gray;'>Car swirl air while moving (Source: https://www.withouthotair.com)</figcaption>
 </figure>
 
 There are numbers of way to reduce energy usage in swirling air:
+- Slower driving 
 - Reduce the frontal area
 - Round the edges of the frontal end
 - Use less friction materials for vehicle's frame
-- Install rear spoiler
+- Install rear spoiler - like most sport cars do
 - Lower the vehicle
 - Use narrower tires
 
-This is where the study of areodynamics come in, much of it is about how we design the shape of our car so it is easier to pass through air. In automotive design there is a measure called drag coefficient that tell how effecient a vehicle passes through air while moving.
-
-### Overcome road friction
-
-Without friction, we can't move our vehicles, and even if we can, our vehicle will slide and spin unstoppably on road. The only way to stop is crashing to an object that are sticked to ground( we can't crash to a rock though because without the friction the car and the rock will continue to slide together ).
-
-That's also mean we need to use energy to overcome friction in order to move, and how much of energy we have to use is proportional to the vehicle's weight, independent of speed or type of vehicles.
+This is where the study of areodynamics come in, much of it is about how we design the shape of our vehicle in the way that make it easier to pass throuh air. 
+There is a measure called drag coefficient that tell how efficient a vehicle passes through air or water while moving. 
+Drag coefficient is often achieved by practicle measurements, and show high correlation toward fuel economy of the vehicles.
 
 Both Swirling air and overcome road friction is classied as good use of energy while driving car, so here is its proportion in energy consumption.
 
@@ -167,9 +182,12 @@ With the re-generative braking system we can now recover about up to 34% for cit
 
 <img src="https://qnkhuat.github.io/plotly-charts/ev-vs-ce/plots/where_is_the_energy_go_power_to_wheels_with_rb.png" style="width:100%" class="img-center">
 
-## Power Auxiliarary Electrical 
-<img src="https://qnkhuat.github.io/plotly-charts/ev-vs-ce/plots/where_is_the_energy_go_left_over.png" style="width:100%" class="img-center">
+## Power Auxiliary systems
 
+ruxiliary systems is a term refered to 
+
+
+<img src="https://qnkhuat.github.io/plotly-charts/ev-vs-ce/plots/where_is_the_energy_go_left_over.png" style="width:100%" class="img-center">
 
 # Is it possible for a ICE to have 90% effiency?
 No. 
