@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Distance in space"
+title: "Measuring distance in space"
 categories: physics
 permalink: distance
 ---
